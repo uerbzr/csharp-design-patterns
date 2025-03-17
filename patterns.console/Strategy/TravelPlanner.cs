@@ -18,7 +18,7 @@ namespace patterns.console.StrategyPattern
         public void Drive(int kilometers)
         {
             var cost = _travelStrategy.Drive(kilometers);
-            Console.WriteLine($"Cost of the drive: {cost} in a {travelStrategy.GetType().Name}");
+            Console.WriteLine($"Cost of the drive: {cost} in a {_travelStrategy.GetType().Name}");
         }
 
         public TravelStrategy travelStrategy => _travelStrategy;
