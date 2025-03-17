@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace patterns.console.Decorator
 {
-    public abstract class EngineDecorator
+    public abstract class EngineDecorator : IEngine
     {
         protected IEngine _engine;
         public EngineDecorator(IEngine engine)
