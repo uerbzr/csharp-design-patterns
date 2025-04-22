@@ -1,4 +1,5 @@
-﻿using patterns.console.Command;
+﻿using patterns.console.Builder;
+using patterns.console.Command;
 using patterns.console.Decorator;
 using patterns.console.Observer;
 using patterns.console.Strategy.Strategies;
@@ -8,7 +9,7 @@ DecoratorPatternExample();
 ObservablePatternExample();
 StrategyPatternExample();
 CommandPatternExample();
-
+BuilderPatternExample();
 Console.ReadKey();
 
 static void CommandPatternExample()
@@ -56,4 +57,16 @@ static void StrategyPatternExample()
     travelPlanner.Drive(1100);
    
 } 
+static void BuilderPatternExample()
+{
+    ICarBuilder builder = new CarBuilder();
+
+    Car car = builder
+        .SetMake("Toyota")
+        .SetModel("Corolla")
+        .SetColour("Red")
+        .Build();
+
+    Console.WriteLine(car);
+}
 
