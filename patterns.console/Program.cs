@@ -61,7 +61,7 @@ static void BuilderPatternExample()
 {
     ICarBuilder builder = new CarBuilder();
 
-    Car car = builder
+    var car = builder
         .SetMake("Toyota")
         .SetModel("Corolla")
         .SetColour("Red")

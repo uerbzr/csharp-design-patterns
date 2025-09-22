@@ -8,7 +8,7 @@ namespace patterns.console.StrategyPattern
 {
     public abstract class TravelStrategy
     {
-        public int KilometerCost;
+        public int CostPerKilometer { get; set; }
         public abstract decimal Drive(int kilometers);
     }
 }

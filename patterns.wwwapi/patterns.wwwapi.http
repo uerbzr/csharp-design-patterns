@@ -1,0 +1,6 @@
+@patterns.wwwapi_HostAddress = http://localhost:5085
+
+GET {{patterns.wwwapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
